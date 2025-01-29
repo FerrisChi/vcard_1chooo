@@ -1,23 +1,53 @@
 import IconTitle from "./icon-title";
-import TimelineList from "./timeline-list";
+import TimelineItem from "./timeline-item";
+import NormalItem from "./normal-item";
 import type { ProfessionalExperience } from "@/types/resume";
 import type { Education } from "@/types/resume";
 import type { AwardLeaderships } from "@/types/resume";
 import type { TeachingExperience } from "@/types/resume";
+import type { Other } from "@/types/resume";
+import type { Project } from "@/types/resume";
 
-interface TimeLineProps {
-  data: ProfessionalExperience | Education | AwardLeaderships | TeachingExperience;
+interface Props {
+  data: ProfessionalExperience | Education | AwardLeaderships | TeachingExperience | Other | Project;
 }
 
-function TimeLine({ data }: TimeLineProps) {
-  const { icon } = data;
-  const { title } = data;
-  const { items } = data;
+function ItemList({ items }: { items: any[] }) {
+  return (
+    <ol className="timeline-list">
+      {items.map((item, index) => {
+        if ('company' in item) {
+          return (
+            <TimelineItem
+              key={index}
+              company={item.company}
+              location={item.location}
+              role={item.role}
+              duration={item.duration}
+              tasksMarkdown={item.tasksMarkdown}
+            />
+          );
+        } else {
+          return (
+            <NormalItem
+              key={index}
+              titleMarkdown={item.titleMarkdown}
+              tasksMarkdown={item.tasksMarkdown}
+            />
+          );
+        }
+      })}
+    </ol>
+  );
+}
+
+function TimeLine({ data }: Props) {
+  const { icon, title, items } = data;
 
   return (
     <section className="timeline">
       <IconTitle icon={icon} title={title} />
-      <TimelineList items={items} />
+      <ItemList items={items} />
     </section>
   );
 }

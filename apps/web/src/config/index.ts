@@ -5,15 +5,16 @@ import { PiTrophy, PiBooks, PiMediumLogoBold } from "react-icons/pi";
 import { GoalIcon } from '@primer/octicons-react'
 import { LuGithub, LuPencil, LuLinkedin, LuRss, LuMail, LuMapPin } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaReact, FaAws } from "react-icons/fa";
+import { FaReact, FaAws, FaSkiing } from "react-icons/fa";
 import { TbPhoneCalling } from "react-icons/tb";
 import { IoCalendarOutline } from "react-icons/io5";
 import { AiOutlinePython } from "react-icons/ai";
 import { RiJavaLine, RiJavascriptLine } from "react-icons/ri";
-import { SiLatex, SiFastapi, SiKubernetes, SiPostman } from "react-icons/si";
+import { SiLatex, SiFastapi, SiKubernetes, SiPostman, SiSolidity } from "react-icons/si";
 import { BiLogoFlask } from "react-icons/bi";
 import { VscTerminalLinux, VscAzure } from "react-icons/vsc";
-import { DiRedis } from "react-icons/di";
+import { DiRedis, DiScala } from "react-icons/di";
+import { CgGym, CgPiano } from "react-icons/cg";
 import {
   TbBrandCpp, TbBrandTypescript,
   TbBrandGolang, TbBrandNextjs,
@@ -24,51 +25,48 @@ import {
 
 const config: Config = {
   avatar: '/images/profile.webp',
-  title: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
-  description: "I'm Chun-Ho (Hugo) Lin, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
-  author: "Chun-Ho (Hugo) Lin - 1chooo",
+  title: "Jijun (Ferris) Chi",
+  description: "I'm Jijun Chi, a ECE Meng graduate from University of Toronto, and an enthusiasm for Software Engineering 💻.",
+  author: "Jijun (Ferris) Chi",
   keywords: [
-    "Hugo ChunHo Lin",
-    "1chooo",
+    "Jijun Chi",
     "Software Engineering",
-    "Next.js",
-    "React",
   ],
-  status: "Day ONE ⚡️",
-  siteURL: "https://www.1chooo.com",
+  status: "",
+  siteURL: "https://me.1ferris.xyz",
   openGraph: {
-    url: "https://www.1chooo.com/",
+    url: "https://me.1ferris.xyz/",
     type: "website",
-    siteName: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
-    title: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
-    description: "I'm Chun-Ho (Hugo) Lin, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
+    siteName: "Jijun (Ferris) Chi",
+    title: "Jijun (Ferris) Chi",
+    description: "I'm Jijun (Ferris) Chi, a ECE Meng graduate from University of Toronto, and an enthusiasm for Software Engineering 💻.",
     images: [
       {
         url: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
         width: 1200,
         height: 630,
-        alt: "Chun-Ho (Hugo) Lin - 1chooo Cover Image",
+        alt: "Jijun (Ferris) Chi - 1chooo Cover Image",
       },
     ],
   },
   navItems: [
     { path: '/', label: 'About' },
     { path: '/resume', label: 'Resume' },
-    { path: '/portfolio', label: 'Portfolio' },
+    // { path: '/portfolio', label: 'Portfolio' },
     { path: '/post', label: 'Post' },
-    { path: '/gallery', label: 'Gallery' },
+    // { path: '/gallery', label: 'Gallery' },
   ],
   contacts: [
     {
       icon: LuMapPin,
       title: "Location",
-      content: "Taipei, Taiwan 🇹🇼",
+      content: "Toronto, Ontario 🇨🇦",
     },
     {
       icon: LuMail,
       title: "Email",
-      link: "mailto:hugo970217@gmail.com",
-      content: "hugo970217@gmail.com",
+      link: "mailto:ferrischi201@gmail.com",
+      content: "ferrischi201@gmail.com",
     },
     // {
     //   icon: TbPhoneCalling,
@@ -78,8 +76,8 @@ const config: Config = {
     {
       icon: LuGithub,
       title: "GitHub",
-      link: "https://github.com/1chooo",
-      content: "1chooo",
+      link: "https://github.com/FerrisChi",
+      content: "ferrischi",
     },
     // {
     //   icon: IoCalendarOutline,
@@ -89,55 +87,53 @@ const config: Config = {
     {
       icon: LuLinkedin,
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/1chooo/",
-      content: "Chun-Ho (Hugo) Lin",
+      link: "https://www.linkedin.com/in/jijun-chi-14b76b291/",
+      content: "Jijun (Ferris) Chi",
     },
   ],
   socialLinks: [
-    { url: `https://github.com/1chooo`, icon: LuGithub, name: 'GitHub' },
-    { url: `https://www.linkedin.com/in/1chooo/`, icon: LuLinkedin, name: 'LinkedIn' },
-    { url: `https://medium.com/@1chooo`, icon: PiMediumLogoBold, name: 'Medium' },
-    { url: `https://twitter.com/1chooo___`, icon: FaXTwitter, name: 'Twitter' },
+    // { url: `https://github.com/1chooo`, icon: LuGithub, name: 'GitHub' },
+    // { url: `https://www.linkedin.com/in/1chooo/`, icon: LuLinkedin, name: 'LinkedIn' },
+    { url: `https://medium.com/@ferrischi201`, icon: PiMediumLogoBold, name: 'Medium' },
+    // { url: `https://twitter.com/1chooo___`, icon: FaXTwitter, name: 'Twitter' },
     { url: `/rss.xml`, icon: LuRss, name: 'RSS Feed' },
-    { url: `/cv.pdf`, icon: MdAttachment, name: 'CV' },
+    // { url: `/cv.pdf`, icon: MdAttachment, name: 'CV' },
   ],
   about: {
-    "firstName": 'Chun-Ho',
-    "lastName": 'Lin',
+    "firstName": 'Jijun',
+    "lastName": 'Chi',
     "middleName": "",
-    "preferredName": "Hugo",
-    "additionalName": "Hugo",
+    "preferredName": "Ferris",
+    "additionalName": "Ferris",
     "pronouns": 'He/Him',
-    "githubUsername": "1chooo",
+    "githubUsername": "FerrisChi",
     "introduction": `
-I obtained my Bachelor's degree from [National Central University 🐿️](https://www.ncu.edu.tw/), driven by a *sincere passion* for **Software Engineering 💻.**
+Hello👋, I'm Jijun (Ferris) Chi, a ECE Meng graduate from [University of Toronto 🍁](https://www.utoronto.ca/), and an enthusiasm for **Web development 💻** and ** AI/ML applications**. My intrests span across different areas of software engineering, including Full stack web development, database, distributed system, blockchain, Algorithm, and Machine Learning.
 
-Software is built by humans. Unfortunately, humans make errors, <mark class="text-orange-yellow-crayola bg-transparent"><b>LOTS of ERRORS.</b></mark> Throughout human history, humans have learned to craft machines and tools to help us construct complex architecture. Inspired by this, I explore practical methodologies and tools to improve large-scale software systems' quality, reliability, and efficiency.
+In the era of LLM, humans are no longer the only ones who can understand and generate code, but still have the upper hand in understanding the working context with years of experience, and providing domain-specific knowledge. I'm passionate about bridging the gap between cutting-edge AI research and practical applications, as well as building systems that leverage LLMs for private domain knowledge.
 
-In my spare time, I focus on contributing to open-source projects, alongside working out 💪🏻, capturing street photography 📸, and writing tech content ✍🏻.
-
-**Self-motivated, Team player, Love coding 👨🏻‍💻**
+In my spare time, I play League, alongside working out 💪🏻, skiing⛷️, watching movies and a music lover🎹.
     `,
     "lifestyles": [
       {
         icon: LuGithub,
-        title: "Open Source",
-        text: "Actively contributing to open source projects on GitHub."
+        title: "Developer",
+        text: "Contributing to projects on GitHub."
       },
       {
-        icon: LuPencil,
-        title: "Storytelling",
-        text: "Love to share my knowledge and experience with others."
+        icon: FaSkiing,
+        title: "Skiing",
+        text: "Amateru but wholehearted skier."
       },
       {
-        icon: GoalIcon,
+        icon: CgGym,
         title: "Workouts",
-        text: "Basketball and weight training defines my active workout lifestyle."
+        text: "Cardio & Strength training, also a ping-pong player."
       },
       {
-        icon: TbPhotoSquareRounded,
-        title: "Photography",
-        text: "Sky brings freedom; streets, a reminder of others' contributions."
+        icon: CgPiano,
+        title: "music",
+        text: "Melodies are my morning brew."
       }
     ],
     "techStacks": {
@@ -150,8 +146,9 @@ In my spare time, I focus on contributing to open-source projects, alongside wor
         { name: 'JavaScript', icon: RiJavascriptLine },
         { name: 'LaTeX', icon: SiLatex },
         { name: 'Markdown', icon: TbMarkdown },
-        { name: 'Astro', icon: TbBrandAstro },
-        { name: 'Terraform', icon: TbBrandTerraform },
+        { name: 'SQL', icon: TbBrandMysql },
+        { name: 'Solidity', icon: SiSolidity },
+        { name: "Scala", icon: DiScala},
       ],
       frameworks: [
         { name: 'React', icon: FaReact },
@@ -166,7 +163,6 @@ In my spare time, I focus on contributing to open-source projects, alongside wor
         { name: 'Django', icon: TbBrandDjango },
         { name: 'Kubernetes', icon: SiKubernetes },
         { name: 'Postman', icon: SiPostman },
-        { name: 'Azure', icon: VscAzure },
       ],
     }
   },
@@ -176,108 +172,98 @@ In my spare time, I focus on contributing to open-source projects, alongside wor
       "title": "Education",
       "items": [
         {
-          company: "National Central University",
-          location: "Taoyuan, Taiwan",
-          role: "Bachelors of Science in Atmospheric Science",
-          duration: "Sep. 2020 — Jun. 2024",
-          tasksMarkdown: `
-- **Minor Specialty:** Computer Science & Information Engineering
-- **Graduate-level Courses:** The Attack and Defense of Computers, Object-Oriented Analysis and Design.
-- **B.S.-level Courses:** Software Engineering, Principles of Programming Languages, Assembly Language and System Programming, Operating System, Computer Network, Algorithmics, Data Structures, Digital Design, Numerical Analysis
-- TA: Linux and Edge Computing, Programming Python, Weather and Artificial Intelligence, Freshman English, Student Service-Learning
-        `,
-        },
-      ],
-    },
-    "awardLeaderships": {
-      "icon": PiTrophy,
-      "title": "Award & Leaderships",
-      "items": [
-        {
-          company: "2023 Weather Hackathon",
-          location: "Taipei, Taiwan",
-          role: "Team Leader, Full Stack Developer",
-          duration: "May, 2023 - Aug, 2023",
-          tasksMarkdown: `
-- The second place winner, as well as the Executive Yuan Sustainability Special Award 
-<sup>[[News](https://www.weatherrisk.com/post/%E7%AC%AC%E4%BA%8C%E5%B1%86-%E5%A4%A9%E6%B0%A3%E9%BB%91%E5%AE%A2%E6%9D%BE-%E5%9C%93%E6%BB%BF%E6%88%90%E5%8A%9F%EF%BC%8Cesg%E3%80%81%E6%B0%B8%E7%BA%8C%E8%AD%B0%E9%A1%8C%E5%8F%97%E8%A9%95%E5%AF%A9%E8%A6%AA%E7%9D%9E)] | 
-[[GitHub](https://github.com/Weather-Shakespeare)] | 
-[[Blog](https://weather-shakespeare.github.io/)]</sup>
-        `,
-        },
-      ],
-    },
-    "teachingExperiences": {
-      "icon": PiBooks,
-      "title": "Teaching",
-      "items": [
-        {
-          "company": "National Central University",
-          "location": "Taoyuan, Taiwan",
-          "role": "Teaching Assistant",
-          "duration": "Feb. 2021 - Jun. 2024",
+          "company": "University of Toronto",
+          "location": "Ontario, Canada",
+          "role": "M.Eng Electrical & Computer Engineering",
+          "duration": "Sep. 2023 — Jun. 2025",
           "tasksMarkdown": `
-- GS4538 Linux and Edge Computing, 24 Spring, Dr. Chia-Kai Chang <sup>[[Website](https://ncuedu.tw/course/linux)] | [[GitHub](https://github.com/NCU-GS4538-Linux)]</sup>
-- AP4064 Weather and Artificial Intelligence II, 24 Spring, Mr. Che-Wei Chou <sup>[[GitHub](https://github.com/weather-and-ai)]</sup>
-- AP4063 Weather and Artificial Intelligence I, 23 Fall, Mr. Che-Wei Chou <sup>[[GitHub](https://github.com/weather-and-ai)]</sup>
-- GS4719 Python Programming, 23 Fall, Dr. Chia-Kai Chang <sup>[[Website](https://ncuedu.tw/course/python)] | [[GitHub](https://github.com/NCU-GS4719-Python)]</sup>
-- Freshman English, 22 Fall & 23 Spring Dr. Chen, Jou-Yin
-- Student Service-Learning, 21 Spring, Prof. Wei-Yu Chang
-        `,
+  - **GPA:** 3.96/4.0
+  - **Courses:** Creative Applications of Natural Language Processing(A+), Cloud computing(A+), Blockchain technologies(A+), Reinforcement learning(A+), Designing Modern Web-Scale Applications
+          `
         },
-      ],
+        {
+          "company": "Beijing University of Posts and Telecommunications",
+          "location": "China",
+          "role": "B.Comp.Sc Computer science and technology",
+          "duration": "Sep. 2019 — Jul. 2023",
+          "tasksMarkdown": `
+  - **GPA:** 3.85/4.0 (2/437)
+  - **Awards:** China National Scholarship(Top 3 in program), Silver Medal in The 46th ICPC Asia Regional Contest (International Collegiate Programming Contest) Jinan Site, Outstanding Student Leader of BUPT
+          `
+        }
+      ]
     },
     "professionalExperiences": {
       "icon": MdOutlineDevices,
-      "title": "Professional Experience",
+      "title": "Experience",
       "items": [
         {
-          "company": "eCloudvalley Digital Technology",
-          "location": "New Taipei, Taiwan",
-          "role": "Cloud Engineer Intern",
-          "duration": "Mar. 2024 - May. 2024",
+          "company": "Centivizer",
+          "location": "Toronto, CA",
+          "role": "Full Stack Developer Intern",
+          "duration": "May 2024 — Now",
           "tasksMarkdown": `
-- Led a team of 5 to enhance issue pools with AWS Bedrock, boosting cloud support efficiency by 80% through multi-language support and 95% accurate image recognition. Honored as the top-achieving internship team.
-- Utilized a serverless architecture on AWS Lambda, performing troubleshooting with CloudWatch, deployed via AWS CDK, and integrated with DynamoDB and Bedrock services.
-- Documented issues in 10+ mock cases, such as VPC entry failures, EC2 Apache server restarts, and S3 photo access problems, and provided detailed solutions for interns. Refer [here](https://github.com/1chooo/ecv-training-materials/tree/main/msp/aws_challenge) for a comprehensive list.
-          `,
-        },
-        {
-          "company": "Amazon Web Services",
-          "location": "Taipei, Taiwan",
-          "role": "Campus Ambassador",
-          "duration": "Aug. 2023 - Jan. 2024",
-          "tasksMarkdown": `
-- Educated 700+ cloud developers and achieved 96% user satisfaction by conducting 2 technical workshops, developing an open-source project, and 1 UAD with AWS cloud services. Refer [here](https://github.com/aws-educate-tw/aws-line-business-card-workshop) for the source code.
-- Conducted a comprehensive 35+ page market research study on cloud suppliers as part of an 11-member team.
-          `,
-        },
-        {
-          "company": "PEGATRON Corporation",
-          "location": "Taipei, Taiwan",
-          "role": "Software Engineer Intern",
-          "duration": "Jul. 2023 - Aug. 2023",
-          "tasksMarkdown": `
-- Executed a POC, adapting an LLM model for Smart Manufacturing, and was awarded Silver internship team.
-- Collaborated with a team of 5, utilized Git, a CI/CD pipeline, and followed an agile Scrum workflow.
-- Implemented Prompt Engineering and LangChain for the NVIDIA Ominerve visual robot, enabling seamless speech/text operation, boosting test support by 83% across 6-11 scenarios with 85% stability.
-          `,
-        },
-        {
-          "company": "National Central University",
-          "location": "Taoyuan, Taiwan",
-          "role": "Website Developer",
-          "duration": "Jul. 2022 - Jan. 2023",
-          "tasksMarkdown": `
-- Partnered with a team of 2 to develop a multi-user score management system for the Center for Teacher Education, reducing credit exemption processing time by 80% and remotely maintaining the server via SSH.
-          `,
-        },
-      ],
+  - Engineered a competition mode and game summary page for an exercise-focused web game using Node.js, expanding global reach to 3 countries through i18next localization
+  - Rebuilt the game using Next.js, TypeScript and Tailwind CSS, improving lighthouse performance by 26 points
+  - Established real-time communication pipeline with Socket.io, enabling bidirectional data exchange between clients and peripheral hardware for pedal sensor data transmission and remote control
+  - Optimized user experience by developing a tag-based voice search service to select travel destinations on IoT devices, improving user accessibility and stimulating user participation
+          `
+        }
+      ]
     },
+    "projects": {
+      "icon": PiBooks,
+      "title": "Projects",
+      "items": [
+        {
+          "titleMarkdown": "Personalized recommendation in Q&A forum <span /> | Golang, TypeScript, React",
+          "contentMarkdown": `
+  - Contributed to Apache Answer open-source project by implementing a tailored recommendation feature and integrating Gorse recommender plugin, potentially to increase user engagement by 20%
+  - Executed inclusive test cases; analyzed, debugged and troubleshot issues with PostgreSQL and MySQL
+          `
+        },
+        {
+          "titleMarkdown": "FreeCoupon, a Coupon Distribution System <span /> | Java, Spring Boot, Redis, MySQL, RocketMQ",
+          "contentMarkdown": `
+  - Developed a coupon schema creation module using Chain of Responsibility for parameter verification; prevented duplicate submissions with custom annotations and distributed locks
+  - Built robust coupon schema query feature using Bloom filters and cache nullification to mitigate cache penetration and cache breakdown caused by malicious requests
+  - Implemented fault-tolerant coupon distribution service using message queues, optimistic locking and spin retry mechanism to ensure accurate inventory management and prevent over-deduction
+          `
+        },
+        {
+          "titleMarkdown": "CourseCompanion, an AI-driven Academic Advisor <span /> | RAG, Django, Vue.js",
+          "contentMarkdown": `
+  - Engineered an AI agent to provide academic guidance to students, leveraging GPT and Retrieval-Augmentation-Generation techniques. Achieved a Recall@5 of 37% and an NDCG@5 of 96% for suggested courses
+  - Developed full-stack web application while enhancing security and user convenience through OAuth2 authentication. Increased system responsiveness by 40% via Celery-based task processing
+          `
+        },
+        {
+          "titleMarkdown": "GPU-Accelerated Compressed Sampling GNN Framework <span /> | C++, CUDA, Python, PyTorch",
+          "contentMarkdown": `
+  - Proposed TCG(T-dimensional Compress Graph), a CUDA-level, tree-based data structure to compress graph data and integrated TCG-based graph sampling pipeline into Deep Graph Library(DGL)
+  - Built up TCG-sampling-based graph neural network training on PyTorch, achieving up to a 10X reduction in memory usage and doubling speed of graph data transfer from CPU to GPU
+          `
+        }
+      ]
+    },
+    "others": {
+      "icon": PiTrophy,
+      "title": "Skills & Others",
+      "items": [
+        {
+          "titleMarkdown": "Technical Skills",
+          "contentMarkdown": "HTML, CSS, REST, Scala, Solidity, Spark, Git, Jenkins, Docker, Bash, Linux, Matlab, Kubernetes"
+        },
+        {
+          "titleMarkdown": "Other",
+          "contentMarkdown": "CCF student fellow, 30 hours C++ tutor, G driver's licence"
+        }
+      ]
+    }
   },
   "giscusConfig": {
     id: "comments",
-    repo: "1chooo/1chooo.com",
+    repo: "FerrisChi/vcard_1chooo",
     repoId: process.env.NEXT_PUBLIC_GISCUS_REPO_ID || '',
     category: "General",
     categoryId: process.env.NEXT_PUBLIC_GISCUS_CONFIG_CATEGORY_ID || '',
