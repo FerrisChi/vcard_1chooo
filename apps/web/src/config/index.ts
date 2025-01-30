@@ -110,9 +110,9 @@ const config: Config = {
     "introduction": `
 Hello👋, I'm Jijun (Ferris) Chi, a ECE Meng graduate from [University of Toronto 🍁](https://www.utoronto.ca/), and an enthusiasm for **Web development 💻** and **AI/ML applications**. My intrests span across different areas of software engineering, including Full stack web development, database, distributed system, blockchain, Algorithm, and Machine Learning.
 
-In the era of LLM, humans are no longer the only ones who can understand and generate code, but still have the upper hand in understanding the working context with years of experience, and providing domain-specific knowledge. I'm passionate about bridging the gap between cutting-edge AI research and practical applications, as well as building systems that leverage LLMs for private domain knowledge.
+In the era of LLM, humans are no longer the only ones who can understand and generate code, but I believe that they still have the upper hand in understanding the working context with years of experience, and providing domain-specific knowledge. I'm passionate about bridging the gap between cutting-edge AI research and practical applications, as well as building systems that leverage LLMs for private domain knowledge.
 
-In my spare time, I play League, alongside working out 💪🏻, skiing⛷️, watching movies and a music lover🎹.
+Beyond coding, you'll find me battling in League, maintaining an active lifestyle through workouts 💪🏻 and skiing ⛷️, or unwinding with movies and music 🎹.
     `,
     "lifestyles": [
       {

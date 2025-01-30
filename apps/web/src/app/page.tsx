@@ -122,7 +122,7 @@ async function About() {
       <PageHeader header={header} />
       <AboutHeader
         id="introduction"
-        text="$ ls -al Hugo 👨🏻‍💻 (He/Him)"
+        text="$ ls -al Ferris 👨🏻‍💻 (He/Him)"
       />
       <MarkdownRenderer
         className="text-light-gray leading-relaxed"

@@ -1,11 +1,11 @@
 {
-  "name": "1chooo-com",
+  "name": "vcard_1chooo",
   "version": "0.6.6",
   "private": true,
   "license": "CC-BY-4.0",
   "author": {
-    "name": "1chooo",
-    "email": "hugo970217@gmail.com"
+    "name": "Ferris Chi",
+    "email": "chijijun@outlook.com"
   },
   "repository": {
     "type": "git",
