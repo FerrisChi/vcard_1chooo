@@ -32,7 +32,7 @@ function ItemList({ items }: { items: any[] }) {
             <NormalItem
               key={index}
               titleMarkdown={item.titleMarkdown}
-              tasksMarkdown={item.tasksMarkdown}
+              contentMarkdown={item.contentMarkdown}
             />
           );
         }

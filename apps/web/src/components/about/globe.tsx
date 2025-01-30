@@ -38,8 +38,8 @@ function Globe() {
       devicePixelRatio: 2,
       width: width * 2,
       height: width * 2,
-      phi: 0,
-      theta: 0,
+      phi: 0,    // Changed from 0
+      theta: 0,   // Changed from 0
       dark: 1,
       diffuse: 2,
       mapSamples: 12_000,
@@ -47,10 +47,11 @@ function Globe() {
       baseColor: [0.8, 0.8, 0.8],
       markerColor: [1, 0.85, 0.42],
       glowColor: [0.5, 0.5, 0.5],
-      markers: [{ location: [25.105497, 121.597366], size: 0.1 }],
+      markers: [{ location: [43.666830666, -79.401331728], size: 0.1 }],
       scale: 1.05,
       onRender: (state) => {
-        state.phi = 2.75 + r.get();
+        // You might also want to adjust this to maintain Toronto's position
+        state.phi = -0.2 + r.get();
         state.width = width * 2;
         state.height = width * 2;
       }

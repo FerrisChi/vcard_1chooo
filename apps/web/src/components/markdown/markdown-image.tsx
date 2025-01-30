@@ -26,7 +26,8 @@ function MarkdownImage({ src, alt }: MarkdownImageProps) {
           alt={alt ?? 'Image'}
           fill
           priority={true}
-          onLoadingComplete={(target) => {
+          onLoad={(event) => {
+            const target = event.target as HTMLImageElement;
             setAspectRatio(target.naturalWidth / target.naturalHeight);
           }}
         />

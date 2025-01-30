@@ -108,7 +108,7 @@ const config: Config = {
     "pronouns": 'He/Him',
     "githubUsername": "FerrisChi",
     "introduction": `
-Hello👋, I'm Jijun (Ferris) Chi, a ECE Meng graduate from [University of Toronto 🍁](https://www.utoronto.ca/), and an enthusiasm for **Web development 💻** and ** AI/ML applications**. My intrests span across different areas of software engineering, including Full stack web development, database, distributed system, blockchain, Algorithm, and Machine Learning.
+Hello👋, I'm Jijun (Ferris) Chi, a ECE Meng graduate from [University of Toronto 🍁](https://www.utoronto.ca/), and an enthusiasm for **Web development 💻** and **AI/ML applications**. My intrests span across different areas of software engineering, including Full stack web development, database, distributed system, blockchain, Algorithm, and Machine Learning.
 
 In the era of LLM, humans are no longer the only ones who can understand and generate code, but still have the upper hand in understanding the working context with years of experience, and providing domain-specific knowledge. I'm passionate about bridging the gap between cutting-edge AI research and practical applications, as well as building systems that leverage LLMs for private domain knowledge.
 
@@ -187,7 +187,7 @@ In my spare time, I play League, alongside working out 💪🏻, skiing⛷️, w
           "role": "B.Comp.Sc Computer science and technology",
           "duration": "Sep. 2019 — Jul. 2023",
           "tasksMarkdown": `
-  - **GPA:** 3.85/4.0 (2/437)
+  - **GPA:** 3.85/4.0 (Top 5% in program)
   - **Awards:** China National Scholarship(Top 3 in program), Silver Medal in The 46th ICPC Asia Regional Contest (International Collegiate Programming Contest) Jinan Site, Outstanding Student Leader of BUPT
           `
         }

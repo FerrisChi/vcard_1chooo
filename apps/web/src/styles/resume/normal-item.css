@@ -1,0 +1,29 @@
+.normal-text {
+    color: var(--light-gray);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
+
+.normal-text ul li {
+    list-style: disc;
+}
+
+.normal-text ul li ul li {
+    list-style: circle;
+}
+
+.normal-text ul li ul li ul li {
+    list-style: square;
+}
+
+.normal-text ol li {
+    list-style: decimal;
+}
+
+.normal-text ol li ol li {
+    list-style: lower-alpha;
+}
+
+.normal-text ol li ol li ol li {
+    list-style: lower-roman;
+}

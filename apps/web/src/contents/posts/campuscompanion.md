@@ -1,5 +1,5 @@
 ---
-title: "CampusCompanion: AI-Powered Course Recommendations"
+title: "CampusCompanion: AI-Powered Course Recommendation Chatbot"
 category: "AI/ML"
 startDate: 2024-01-29
 endDate: 2024-01-29
@@ -15,7 +15,7 @@ banner: /images/banner/posts/compus-companion-high-resolution-logo.webp
 alt: "CampusCompanion"
 ---
 
-# CampusCompanion: AI-Powered Course Recommendations
+# CampusCompanion: AI-Powered Course Recommendation Chatbot
 
 Course selection can be overwhelming for university students. With numerous options available and complex prerequisites to navigate, making the right choice isn't always straightforward. That's where CampusCompanion comes in - an intelligent course recommendation system that leverages Large Language Models (LLMs) and Retrieval Augmented Generation (RAG) to provide personalized academic guidance.
 
@@ -121,6 +121,3 @@ Through manual evaluation of 30 different scenarios, we found:
 CampusCompanion demonstrates the potential of AI-powered academic advising. By combining LLMs with structured course data and intelligent search, we can provide students with personalized, accessible guidance for their academic journey. The system's strong performance metrics and positive user feedback suggest a promising direction for the future of academic planning tools.
 
 The project code and documentation are available on [GitHub](your-repo-link).
-```
-
-Would you like me to modify any section or add more technical details to specific parts?
