@@ -11,7 +11,7 @@ tags:
   - Python
   - Django
   - Vue.js
-banner: /images/banner/posts/compus-companion-high-resolution-logo.webp
+banner: /images/banner/posts/campus-companion.webp
 alt: "CampusCompanion"
 ---
 
